@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Intelligence Graph Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+</head>
+<body>
+    <header>
+        <h2>Enterprise Market Knowledge Graph Terminal</h2>
+    </header>
+    
+    <div class="container">
+        <div class="input-panel">
+            <h3>Upload Dataset</h3>
+            <p>Upload a financial news or corporate text dataset (.csv format from Kaggle)</p>
+            <input type="file" id="file-input" accept=".csv">
+            <button type="button" id="submit-btn">Upload & Map Intelligence</button>
+
+            <div id="executive-summary" style="margin-top: 20px; padding: 15px; background: #1e293b; border-left: 4px solid #3b82f6; border-radius: 4px; display: none; max-height: 480px; overflow-y: auto;">
+                <div id="summary-text" style="font-size: 14px; line-height: 1.6; color: #e2e8f0;"></div>
+            </div>
+        </div>
+        
+        <div class="graph-panel">
+            <h3>Interactive Corporate Network Map</h3>
+            <div id="network-canvas" style="height: 600px; width: 100%; border-radius: 4px; background: #0f172a;"></div>
+        </div>
+    </div>
+
+    <script src="app.js?v=4.0"></script>
+</body>
+</html>

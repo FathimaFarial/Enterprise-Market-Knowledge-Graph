@@ -1,0 +1,67 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background-color: #0f172a; /* Sleek dark enterprise theme */
+    color: #e2e8f0;
+}
+header {
+    background: #1e293b;
+    padding: 15px 25px;
+    border-bottom: 2px solid #334155;
+}
+header h2 { margin: 0; font-size: 20px; font-weight: 600; color: #38bdf8; }
+.container {
+    display: flex;
+    height: calc(100vh - 85px);
+    padding: 20px;
+    gap: 20px;
+    box-sizing: border-box;
+}
+.input-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #334155;
+}
+.input-panel h3 { margin-top: 0; color: #f1f5f9; }
+.input-panel p { font-size: 13px; color: #94a3b8; line-height: 1.5; }
+input[type="file"] {
+    background: #0f172a;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px dashed #475569;
+    margin: 20px 0;
+    color: #94a3b8;
+    cursor: pointer;
+}
+button {
+    background: #0284c7;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+button:hover { background: #0369a1; }
+.graph-panel {
+    flex: 2;
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #334155;
+}
+.graph-panel h3 { margin-top: 0; color: #f1f5f9; }
+#network-canvas {
+    flex: 1;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    background: #0f172a;
+}
